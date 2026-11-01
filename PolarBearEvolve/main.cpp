@@ -3,10 +3,13 @@
 #include <iostream>
 // Starting the game loop
 
+
 int main()
 {
     InitWindow(720, 900, "Polar Bear");
 
+
+    // Loaded Texture from assets folder
     Texture2D snowbackground = LoadTexture("Assets/SnowBackground.png");
 
 
