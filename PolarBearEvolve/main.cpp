@@ -1,5 +1,7 @@
 #include <raylib.h>
+
 #include <iostream>
+// Starting the game loop
 
 int main()
 {
