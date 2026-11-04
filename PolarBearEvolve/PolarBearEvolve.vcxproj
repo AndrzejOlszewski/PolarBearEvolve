@@ -130,6 +130,7 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\Downloads\SnowBackground.jpg" />
+    <Image Include="..\..\..\PolarBearEvolve\PolarBearEvolve\Assets\polar_bear.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

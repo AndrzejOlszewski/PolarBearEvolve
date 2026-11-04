@@ -26,5 +26,8 @@
     <Image Include="..\..\..\..\Downloads\SnowBackground.jpg">
       <Filter>Assets</Filter>
     </Image>
+    <Image Include="..\..\..\PolarBearEvolve\PolarBearEvolve\Assets\polar_bear.png">
+      <Filter>Assets</Filter>
+    </Image>
   </ItemGroup>
 </Project>
