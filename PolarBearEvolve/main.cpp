@@ -14,6 +14,20 @@ public:
     int frameWidth;
     int frameHeight;
 
+    float movementSpeed = 200.0f;
+
+    void Update() {
+        if (IsKeyDown(KEY_RIGHT)) bearPosition.x += movementSpeed * GetFrameTime();
+       
+        if (IsKeyDown(KEY_LEFT)) bearPosition.x -= movementSpeed * GetFrameTime();
+        
+
+        if (IsKeyDown(KEY_UP)) bearPosition.y -= movementSpeed * GetFrameTime();
+       
+        if (IsKeyDown(KEY_DOWN)) bearPosition.y += movementSpeed * GetFrameTime();
+        
+    }
+
 };
 
 
@@ -23,6 +37,8 @@ int main()
     const int windowHeight = 720;
 
     InitWindow(windowWidth, windowHeight, "Polar Bear");
+
+    PolarBear bear;
 
     Texture2D snowbackground = LoadTexture("Assets/SnowBackground.png");
 
@@ -39,6 +55,7 @@ int main()
 
     while (!WindowShouldClose())
     {
+        bear.Update();
         BeginDrawing();
         ClearBackground(BLACK);
 
@@ -66,7 +83,10 @@ int main()
 
             
 
-            DrawTextureRec(polarBear, bearFrame, bearPosition, WHITE);
+            DrawTextureRec(polarBear, bearFrame, bear.bearPosition, WHITE);
+            
+
+
         }
 
         EndDrawing();
