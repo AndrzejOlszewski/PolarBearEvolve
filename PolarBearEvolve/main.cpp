@@ -2,6 +2,29 @@
 #include <raylib.h>
 #include <iostream>
 
+enum PenguinState
+{
+    ALIVE,
+    DYING,
+    DEAD
+};
+
+
+class Penguin
+{
+public:
+   
+
+
+};
+
+Penguin::Penguin()
+{
+}
+
+Penguin::~Penguin()
+{
+}
 class PolarBear
 {
 public:
