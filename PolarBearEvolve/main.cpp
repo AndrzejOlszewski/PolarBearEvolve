@@ -26,28 +26,28 @@ public:
     void Update()
     {
         // Move right
-        if (IsKeyDown(KEY_RIGHT))
+        if (IsKeyDown(KEY_D))
         {
             bearPosition.x += movementSpeed * GetFrameTime();
             currentDirection = 1;
         }
 
         // Move left
-        if (IsKeyDown(KEY_LEFT))
+        if (IsKeyDown(KEY_A))
         {
             bearPosition.x -= movementSpeed * GetFrameTime();
             currentDirection = 3;
         }
 
         // Move up
-        if (IsKeyDown(KEY_UP))
+        if (IsKeyDown(KEY_W))
         {
             bearPosition.y -= movementSpeed * GetFrameTime();
             currentDirection = 0;
         }
 
         // Move down
-        if (IsKeyDown(KEY_DOWN))
+        if (IsKeyDown(KEY_S))
         {
             bearPosition.y += movementSpeed * GetFrameTime();
             currentDirection = 2;
@@ -55,10 +55,10 @@ public:
 
         // Check if the bear is moving
         bool isMoving =
-            IsKeyDown(KEY_RIGHT) ||
-            IsKeyDown(KEY_LEFT) ||
-            IsKeyDown(KEY_UP) ||
-            IsKeyDown(KEY_DOWN);
+            IsKeyDown(KEY_D) ||
+            IsKeyDown(KEY_A) ||
+            IsKeyDown(KEY_W) ||
+            IsKeyDown(KEY_S);
 
         // Handle animation
         if (isMoving)
