@@ -8,6 +8,22 @@ enum PenguinState
     DEAD
 };
 
+class Health
+{
+public:
+ 
+
+
+};
+
+Health::Health()
+{
+}
+
+Health::~Health()
+{
+}
+
 class Penguin
 {
 public:
